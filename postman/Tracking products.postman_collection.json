@@ -1,0 +1,549 @@
+{
+	"info": {
+		"_postman_id": "ded00027-3cdd-432e-9a4d-e6eb85bf30c9",
+		"name": "Tracking products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10958699",
+		"_collection_link": "https://crimson-meteor-887018.postman.co/workspace/My-Workspace~90c379e1-0319-4de8-89b1-e7695bd8b5f1/collection/10958699-ded00027-3cdd-432e-9a4d-e6eb85bf30c9?action=share&source=collection_link&creator=10958699"
+	},
+	"item": [
+		{
+			"name": "States and Cities",
+			"item": [
+				{
+					"name": "Get States",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/states",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"states"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/cities/28",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"cities",
+								"28"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/categories?page=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"categories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Selecting",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/categories?page=1&fields[categories]=id,name,image,created_at",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"categories"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "fields[categories]",
+											"value": "id,name,image,created_at"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Including",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/categories?page=1&include=subcategories,products",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"categories"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "include",
+											"value": "subcategories,products"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Filtering",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/categories?page=1&filter[id]=1&filter[name]=category001",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"categories"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "filter[id]",
+											"value": "1"
+										},
+										{
+											"key": "filter[name]",
+											"value": "category001"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Sorting",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/categories?page=1&sort=-id,-name",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"categories"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "sort",
+											"value": "-id,-name"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Subcategory",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/subcategories?page=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"subcategories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Selecting",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/subcategories?page=1&fields[sub_categories]=id,name,image,created_at",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"subcategories"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "fields[sub_categories]",
+											"value": "id,name,image,created_at"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Including",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/subcategories?page=1&include=category,products",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"subcategories"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "include",
+											"value": "category,products"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Filtering",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/subcategories?page=1&filter[id]=1&filter[category_id]=category001&filter[name]=subcategory001",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"subcategories"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "filter[id]",
+											"value": "1"
+										},
+										{
+											"key": "filter[category_id]",
+											"value": "category001"
+										},
+										{
+											"key": "filter[name]",
+											"value": "subcategory001"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Sorting",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/subcategories?page=1&sort=-id,-name",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"subcategories"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "sort",
+											"value": "-id,-name"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/products?page=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Selecting",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/products?page=1&fields[products]=id,category_id,name,subcategory_id,wholesale_price,retail_price,weight,barcode,delivery_company,image,created_at",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"products"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "fields[products]",
+											"value": "id,category_id,name,subcategory_id,wholesale_price,retail_price,weight,barcode,delivery_company,image,created_at"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Including",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/products?page=1&include=category,subcategory",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"products"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "include",
+											"value": "category,subcategory"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Filtering",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/products?page=1&filter[id]=1&filter[category_id]=category001&filter[name]=subcategory001",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"products"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "filter[id]",
+											"value": "1"
+										},
+										{
+											"key": "filter[category_id]",
+											"value": "category001"
+										},
+										{
+											"key": "filter[name]",
+											"value": "subcategory001"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Sorting",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/products?page=1&sort=-id,-name",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"products"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "sort",
+											"value": "-id,-name"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "complaints",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\": 1, // required\r\n    \"name\": \"Test\", // optional\r\n    \"email\": \"test@test.com\", // optional\r\n    \"phone\": \"0660000001\", // optional\r\n    \"state_id\": 28, // required\r\n    \"city_id\": 2520, // required\r\n    \"message\": \"سعر مرتفع\" // required\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/complaints",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"complaints"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,466 @@
+[
+    {
+        "id": "1",
+        "code": "1",
+        "name_fr": "Adrar",
+        "name_ar": "أدرار",
+        "longitude": "27.9766155",
+        "latitude": "-0.20396"
+    },
+    {
+        "id": "2",
+        "code": "2",
+        "name_fr": "Chlef",
+        "name_ar": "الشلف",
+        "longitude": "36.1691245",
+        "latitude": "1.3539002"
+    },
+    {
+        "id": "3",
+        "code": "3",
+        "name_fr": "Laghouat",
+        "name_ar": "الأغواط",
+        "longitude": "33.7873735",
+        "latitude": "2.8829115"
+    },
+    {
+        "id": "4",
+        "code": "4",
+        "name_fr": "Oum El Bouaghi",
+        "name_ar": "أم البواقي",
+        "longitude": "35.8726014",
+        "latitude": "7.1180248"
+    },
+    {
+        "id": "5",
+        "code": "5",
+        "name_fr": "Batna",
+        "name_ar": "باتنة",
+        "longitude": "35.32147",
+        "latitude": "3.1066502"
+    },
+    {
+        "id": "6",
+        "code": "6",
+        "name_fr": "Béjaïa",
+        "name_ar": "بجاية",
+        "longitude": "36.7695969",
+        "latitude": "5.0085855"
+    },
+    {
+        "id": "7",
+        "code": "7",
+        "name_fr": "Biskra",
+        "name_ar": "بسكرة",
+        "longitude": "34.8515041",
+        "latitude": "5.7246709"
+    },
+    {
+        "id": "8",
+        "code": "8",
+        "name_fr": "Bechar",
+        "name_ar": "بشار",
+        "longitude": "31.5977602",
+        "latitude": "-1.8540446"
+    },
+    {
+        "id": "9",
+        "code": "9",
+        "name_fr": "Blida",
+        "name_ar": "البليدة",
+        "longitude": "36.4803023",
+        "latitude": "2.8009379"
+    },
+    {
+        "id": "10",
+        "code": "10",
+        "name_fr": "Bouira",
+        "name_ar": "البويرة",
+        "longitude": "36.2084234",
+        "latitude": "3.925049"
+    },
+    {
+        "id": "11",
+        "code": "11",
+        "name_fr": "Tamanrasset",
+        "name_ar": "تمنراست",
+        "longitude": "22.2746227",
+        "latitude": "5.6754684"
+    },
+    {
+        "id": "12",
+        "code": "12",
+        "name_fr": "Tbessa",
+        "name_ar": "تبسة",
+        "longitude": "35.4117259",
+        "latitude": "8.110545"
+    },
+    {
+        "id": "13",
+        "code": "13",
+        "name_fr": "Tlemcen",
+        "name_ar": "تلمسان",
+        "longitude": "34.8959541",
+        "latitude": "-1.3150979"
+    },
+    {
+        "id": "14",
+        "code": "14",
+        "name_fr": "Tiaret",
+        "name_ar": "تيارت",
+        "longitude": "35.3599899",
+        "latitude": "1.3916159"
+    },
+    {
+        "id": "15",
+        "code": "15",
+        "name_fr": "Tizi Ouzou",
+        "name_ar": "تيزي وزو",
+        "longitude": "36.7002068",
+        "latitude": "4.075957"
+    },
+    {
+        "id": "16",
+        "code": "16",
+        "name_fr": "Alger",
+        "name_ar": "الجزائر",
+        "longitude": "36.7538259",
+        "latitude": "3.057841"
+    },
+    {
+        "id": "17",
+        "code": "17",
+        "name_fr": "Djelfa",
+        "name_ar": "الجلفة",
+        "longitude": "34.6672467",
+        "latitude": "3.2993118"
+    },
+    {
+        "id": "18",
+        "code": "18",
+        "name_fr": "Jijel",
+        "name_ar": "جيجل",
+        "longitude": "36.7962714",
+        "latitude": "5.7504845"
+    },
+    {
+        "id": "19",
+        "code": "19",
+        "name_fr": "Sétif",
+        "name_ar": "سطيف",
+        "longitude": "36.1905173",
+        "latitude": "5.4202134"
+    },
+    {
+        "id": "20",
+        "code": "20",
+        "name_fr": "Saefda",
+        "name_ar": "سعيدة",
+        "longitude": "34.841945",
+        "latitude": "0.1483583"
+    },
+    {
+        "id": "21",
+        "code": "21",
+        "name_fr": "Skikda",
+        "name_ar": "سكيكدة",
+        "longitude": "36.8777912",
+        "latitude": "6.9357204"
+    },
+    {
+        "id": "22",
+        "code": "22",
+        "name_fr": "Sidi Bel Abbes",
+        "name_ar": "سيدي بلعباس",
+        "longitude": "35.206334",
+        "latitude": "-0.6301368"
+    },
+    {
+        "id": "23",
+        "code": "23",
+        "name_fr": "Annaba",
+        "name_ar": "عنابة",
+        "longitude": "36.9184345",
+        "latitude": "7.7452755"
+    },
+    {
+        "id": "24",
+        "code": "24",
+        "name_fr": "Guelma",
+        "name_ar": "قالمة",
+        "longitude": "36.4569088",
+        "latitude": "7.4334312"
+    },
+    {
+        "id": "25",
+        "code": "25",
+        "name_fr": "Constantine",
+        "name_ar": "قسنطينة",
+        "longitude": "36.319475",
+        "latitude": "6.7370571"
+    },
+    {
+        "id": "26",
+        "code": "26",
+        "name_fr": "Medea",
+        "name_ar": "المدية",
+        "longitude": "36.2838408",
+        "latitude": "2.7728462"
+    },
+    {
+        "id": "27",
+        "code": "27",
+        "name_fr": "Mostaganem",
+        "name_ar": "مستغانم",
+        "longitude": "35.9751841",
+        "latitude": "0.1149273"
+    },
+    {
+        "id": "28",
+        "code": "28",
+        "name_fr": "M'Sila",
+        "name_ar": "المسيلة",
+        "longitude": "35.7211476",
+        "latitude": "4.5187283"
+    },
+    {
+        "id": "29",
+        "code": "29",
+        "name_fr": "Mascara",
+        "name_ar": "معسكر",
+        "longitude": "35.382998",
+        "latitude": "0.1542592"
+    },
+    {
+        "id": "30",
+        "code": "30",
+        "name_fr": "Ouargla",
+        "name_ar": "ورقلة",
+        "longitude": "32.1961967",
+        "latitude": "4.9634113"
+    },
+    {
+        "id": "31",
+        "code": "31",
+        "name_fr": "Oran",
+        "name_ar": "وهران",
+        "longitude": "35.7066928",
+        "latitude": "-0.6405861"
+    },
+    {
+        "id": "32",
+        "code": "32",
+        "name_fr": "El Bayadh",
+        "name_ar": "البيض",
+        "longitude": "32.5722756",
+        "latitude": "0.950011"
+    },
+    {
+        "id": "33",
+        "code": "33",
+        "name_fr": "Illizi",
+        "name_ar": "إليزي",
+        "longitude": "26.5065999",
+        "latitude": "8.480587"
+    },
+    {
+        "id": "34",
+        "code": "34",
+        "name_fr": "Bordj Bou Arreridj",
+        "name_ar": "برج بوعريريج",
+        "longitude": "36.0686488",
+        "latitude": "4.7691823"
+    },
+    {
+        "id": "35",
+        "code": "35",
+        "name_fr": "Boumerdes",
+        "name_ar": "بومرداس",
+        "longitude": "36.7564181",
+        "latitude": "3.4917212"
+    },
+    {
+        "id": "36",
+        "code": "36",
+        "name_fr": "El Tarf",
+        "name_ar": "الطارف",
+        "longitude": "36.7534258",
+        "latitude": "8.2984543"
+    },
+    {
+        "id": "37",
+        "code": "37",
+        "name_fr": "Tindouf",
+        "name_ar": "تندوف",
+        "longitude": "27.2460501",
+        "latitude": "-6.3252899"
+    },
+    {
+        "id": "38",
+        "code": "38",
+        "name_fr": "Tissemsilt",
+        "name_ar": "تيسمسيلت",
+        "longitude": "35.6021906",
+        "latitude": "1.802187"
+    },
+    {
+        "id": "39",
+        "code": "39",
+        "name_fr": "El Oued",
+        "name_ar": "الوادي",
+        "longitude": "33.3714492",
+        "latitude": "6.8573436"
+    },
+    {
+        "id": "40",
+        "code": "40",
+        "name_fr": "Khenchela",
+        "name_ar": "خنشلة",
+        "longitude": "35.4263293",
+        "latitude": "7.1414137"
+    },
+    {
+        "id": "41",
+        "code": "41",
+        "name_fr": "Souk Ahras",
+        "name_ar": "سوق أهراس",
+        "longitude": "36.277849",
+        "latitude": "7.9592299"
+    },
+    {
+        "id": "42",
+        "code": "42",
+        "name_fr": "Tipaza",
+        "name_ar": "تيبازة",
+        "longitude": "36.5980966",
+        "latitude": "2.4085379"
+    },
+    {
+        "id": "43",
+        "code": "43",
+        "name_fr": "Mila",
+        "name_ar": "ميلة",
+        "longitude": "36.4514882",
+        "latitude": "6.2487316"
+    },
+    {
+        "id": "44",
+        "code": "44",
+        "name_fr": "Ain Defla",
+        "name_ar": "عين الدفلى",
+        "longitude": "36.1283915",
+        "latitude": "2.1772514"
+    },
+    {
+        "id": "45",
+        "code": "45",
+        "name_fr": "Naama",
+        "name_ar": "النعامة",
+        "longitude": "33.1995605",
+        "latitude": "-0.8021968"
+    },
+    {
+        "id": "46",
+        "code": "46",
+        "name_fr": "Ain Temouchent",
+        "name_ar": "عين تموشنت",
+        "longitude": "35.404044",
+        "latitude": "-1.0580975"
+    },
+    {
+        "id": "47",
+        "code": "47",
+        "name_fr": "Ghardaefa",
+        "name_ar": "غرداية",
+        "longitude": "32.5891743",
+        "latitude": "3.7455655"
+    },
+    {
+        "id": "48",
+        "code": "48",
+        "name_fr": "Relizane",
+        "name_ar": "غليزان",
+        "longitude": "35.8050195",
+        "latitude": "0.867381"
+    },
+    {
+        "id": "49",
+        "code": "49",
+        "name_fr": "El M'ghair",
+        "name_ar": "المغير",
+        "longitude": "33.947222",
+        "latitude": "5.922222"
+    },
+    {
+        "id": "50",
+        "code": "50",
+        "name_fr": "El Menia",
+        "name_ar": "المنيعة",
+        "longitude": "30.579167",
+        "latitude": "2.879167"
+    },
+    {
+        "id": "51",
+        "code": "51",
+        "name_fr": "Ouled Djellal",
+        "name_ar": "أولاد جلال",
+        "longitude": "34.433333",
+        "latitude": "5.066667"
+    },
+    {
+        "id": "52",
+        "code": "52",
+        "name_fr": "Bordj Baji Mokhtar",
+        "name_ar": "برج باجي مختار",
+        "longitude": "21.327778",
+        "latitude": "0.955556"
+    },
+    {
+        "id": "53",
+        "code": "53",
+        "name_fr": "Béni Abbès",
+        "name_ar": "بني عباس",
+        "longitude": "30.133333",
+        "latitude": "-2.166667"
+    },
+    {
+        "id": "54",
+        "code": "54",
+        "name_fr": "Timimoun",
+        "name_ar": "تيميمون",
+        "longitude": "29.258333",
+        "latitude": "0.230556"
+    },
+    {
+        "id": "55",
+        "code": "55",
+        "name_fr": "Touggourt",
+        "name_ar": "تقرت",
+        "longitude": "33.108333",
+        "latitude": "6.063889"
+    },
+    {
+        "id": "56",
+        "code": "56",
+        "name_fr": "Djanet",
+        "name_ar": "جانت",
+        "longitude": "24.554167",
+        "latitude": "9.484722"
+    },
+    {
+        "id": "57",
+        "code": "57",
+        "name_fr": "In Salah",
+        "name_ar": "عين صالح",
+        "longitude": "27.197222",
+        "latitude": "2.483333"
+    },
+    {
+        "id": "58",
+        "code": "58",
+        "name_fr": "In Guezzam",
+        "name_ar": "عين قزام",
+        "longitude": "19.572222",
+        "latitude": "5.769444"
+    }
+]
