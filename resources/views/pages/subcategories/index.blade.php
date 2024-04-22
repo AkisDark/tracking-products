@@ -48,9 +48,13 @@
                                         <td><img class="img-thumbnail" style="width:50px; height:50px"
                                                 src="{{ $subcategory->image }}" alt="{{ $subcategory->name }}"></td>
                                         <td>
-                                            <a href="{{ route('categories.edit', $subcategory?->category?->id) }}">
-                                                {{ $subcategory?->category?->name ?? '/' }}
-                                            </a>
+                                            @if (!empty($subcategory->category))
+                                                <a href="{{ route('categories.edit', $subcategory?->category?->id) }}">
+                                                    {{ $subcategory?->category?->name ?? '/' }}
+                                                </a>
+                                            @else
+                                                /
+                                            @endif
                                         </td>
                                         <td>{{ $subcategory->name }}</td>
                                         <td>{{ $subcategory->created_at->diffForHumans() }}</td>
@@ -69,7 +73,7 @@
                                 @empty
                                     <tr>
                                         <td colspan="6">
-                                            <h5 class="text-center">لا يوجد بيانات</h5>
+                                            <h5 class="text-center">لا توجد بيانات</h5>
                                         </td>
                                     </tr>
                                 @endforelse

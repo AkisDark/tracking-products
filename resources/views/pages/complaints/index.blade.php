@@ -51,14 +51,18 @@
                                 @forelse ($complaints as $complaint)
                                     <tr>
                                         <td>#{{ $complaint->id }}</td>
-                                        <td><img class="img-thumbnail" style="width:50px; height:50px"
-                                                src="{{ $complaint?->product?->image }}"
-                                                alt="{{ $complaint?->product?->name }}">
+                                        <td>
+                                            @if (!empty($complaint->image))
+                                                <img class="img-thumbnail" style="width:50px; height:50px"
+                                                    src="{{ $complaint->image }}" alt="{{ $complaint->name }}" />
+                                            @endif
                                         </td>
                                         <td>
-                                            <a href="{{ route('products.edit', $complaint?->product?->id) }}">
-                                                <strong>{{ $complaint?->product?->name ?? '' }}</strong>
-                                            </a>
+                                            @if (!empty($complaint->product))
+                                                <a href="{{ route('products.edit', $complaint->product->id) }}">
+                                                    {{ $complaint->product->name ?? '/' }}
+                                                </a>
+                                            @endif
                                         </td>
                                         <td>{{ $complaint->name ?? '/' }}</td>
                                         <td>
@@ -91,7 +95,7 @@
                                 @empty
                                     <tr>
                                         <td colspan="10">
-                                            <strong class="text-center">لا يوجد بيانات</strong>
+                                            <strong class="text-center">لا توجد بيانات</strong>
                                         </td>
                                     </tr>
                                 @endforelse

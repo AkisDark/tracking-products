@@ -62,7 +62,7 @@
                                 @empty
                                     <tr>
                                         <td colspan="5">
-                                            <strong class="text-center">لا يوجد بيانات</strong>
+                                            <strong class="text-center">لا توجد بيانات</strong>
                                         </td>
                                     </tr>
                                 @endforelse
