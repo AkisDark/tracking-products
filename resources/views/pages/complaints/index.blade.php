@@ -36,6 +36,12 @@
                                     <th class="text-center text-uppercase opacity-7">
                                         الاسم الكامل </th>
 
+                                    <th class="text-center text-uppercase opacity-7">
+                                        الولاية </th>
+
+                                    <th class="text-center text-uppercase opacity-7">
+                                        البلدية </th>
+
                                     <th class="text-uppercase text-secondary opacity-7">البريد الالكتروني</th>
 
                                     <th class="text-uppercase text-secondary opacity-7">الهاتف</th>
@@ -52,9 +58,10 @@
                                     <tr>
                                         <td>#{{ $complaint->id }}</td>
                                         <td>
-                                            @if (!empty($complaint->image))
+                                            @if (!empty($complaint->product->image))
                                                 <img class="img-thumbnail" style="width:50px; height:50px"
-                                                    src="{{ $complaint->image }}" alt="{{ $complaint->name }}" />
+                                                    src="{{ $complaint->product->image }}"
+                                                    alt="{{ $complaint->product->name }}" />
                                             @endif
                                         </td>
                                         <td>
@@ -65,6 +72,11 @@
                                             @endif
                                         </td>
                                         <td>{{ $complaint->name ?? '/' }}</td>
+
+                                        <td>{{ $complaint->state?->name ?? '/' }}</td>
+
+                                        <td>{{ $complaint->city?->name ?? '/' }}</td>
+
                                         <td>
                                             @if (!empty($complaint->email))
                                                 <a href="mailto:{{ $complaint->email }}">{{ $complaint->email }}</a>

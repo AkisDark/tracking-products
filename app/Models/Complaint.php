@@ -18,4 +18,14 @@ class Complaint extends Model
     {
         return $this->belongsTo(Product::class);
     }
+
+    public function state()
+    {
+        return $this->belongsTo(State::class);
+    }
+
+    public function city()
+    {
+        return $this->belongsTo(City::class);
+    }
 }

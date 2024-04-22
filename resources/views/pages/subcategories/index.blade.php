@@ -48,8 +48,8 @@
                                         <td><img class="img-thumbnail" style="width:50px; height:50px"
                                                 src="{{ $subcategory->image }}" alt="{{ $subcategory->name }}"></td>
                                         <td>
-                                            @if (!empty($subcategory->category))
-                                                <a href="{{ route('categories.edit', $subcategory?->category?->id) }}">
+                                            @if (!empty($subcategory->category?->name))
+                                                <a href="{{ route('categories.edit', $subcategory->category?->id) }}">
                                                     {{ $subcategory?->category?->name ?? '/' }}
                                                 </a>
                                             @else
