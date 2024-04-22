@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dashboard\Auth\AuthController;
+use App\Http\Controllers\Dashboard\Users\ProfileController;
 use App\Http\Controllers\Dashboard\Products\ProductController;
 use App\Http\Controllers\Dashboard\Categories\CategoryController;
 use App\Http\Controllers\Dashboard\Complaints\ComplaintController;
@@ -15,6 +16,14 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 //
 Route::redirect('/', '/products', 301);
+
+// 
+Route::controller(ProfileController::class)->group(function () {
+
+    Route::get('profile', 'profile')->name('users.profile');
+    Route::put('update-profile', 'update')->name('users.update');
+    //
+})->middleware('auth');
 
 //
 Route::controller(CategoryController::class)->group(function () {
