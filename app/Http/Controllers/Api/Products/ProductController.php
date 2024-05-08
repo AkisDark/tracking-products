@@ -42,7 +42,7 @@ class ProductController extends Controller
             ->allowedFilters($this->allowedFilters)
             ->allowedSorts($this->fields)
             ->allowedFields($this->fields)
-            ->allowedIncludes(['category', 'subcategory'])
+            ->allowedIncludes(['category', 'subcategory', 'prices'])
             ->when(request('search'), function ($query, $search) {
                 return $query->whereAny([
                     'id', 'name', 'delivery_company', 'barcode',
