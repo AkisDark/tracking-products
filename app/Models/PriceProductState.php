@@ -12,7 +12,7 @@ class PriceProductState extends Model
 
     protected $guarded = ['id'];
 
-    protected $hidden = ['updated_at'];
+    protected $hidden = ['updated_at', 'created_at'];
 
     protected $appends  = ['state_name'];
 
