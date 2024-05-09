@@ -27,7 +27,7 @@ class CitySeeder extends Seeder
                     $data[] = [
                         'id' => $city['id'] ?? NULL,
                         'state_id' => $city['wilaya_code'] ?? NULL,
-                        'name' => $city['daira_name'] ?? ''
+                        'name' => $city['post_name'] ?? ''
                     ];
                 }
                 DB::table('cities')->insert($data);
